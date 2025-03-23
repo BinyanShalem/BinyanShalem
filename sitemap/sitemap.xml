@@ -39,4 +39,12 @@
     <changefreq>yearly</changefreq>
     <priority>0.1</priority>
   </url>
+
+  <!-- Robots.txt -->
+  <url>
+    <loc>https://www.binyan-shalem.com/robots.txt</loc>
+    <lastmod>2025-03-22</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.1</priority>
+  </url>
 </urlset>
