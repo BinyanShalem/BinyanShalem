@@ -17,4 +17,15 @@ To explore Binyan Shalem, visit the website at:
 Here you can access all the features, resources, and community information.
 
 ## File Structure
+/binyan-shalem ├── /index.html (Home page) ├── /about.html (About page) ├── /community.html (Community page) ├── /resources.html (Resources page) ├── /events.html (Events page) ├── /donate.html (Donate page) └── /styles └── style.css (CSS for styling)
 
+markdown
+Copy
+Edit
+
+## Donate Page
+The **Donate** page can be accessed at:
+
+[**Binyan Shalem Donate**](https://www.binyan-shalem.com/donate)
+
+Here, users can contribute to support the mission of Binyan Shalem and its ongoing work in promoting Jewish values and fost
