@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>admin</title>
+  <link rel="icon" href="https://raw.githubusercontent.com/BinyanShalem/BinyanShalem/refs/heads/main/favicon.ico" type="image/x-icon">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f7f7f7;
+      padding: 40px;
+      display: flex;
+      justify-content: center;
+    }
+    .container {
+      background: white;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      width: 100%;
+      max-width: 600px;
+    }
+    textarea {
+      width: 100%;
+      height: 450px;
+      padding: 15px;
+      font-size: 16px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      resize: none;
+      margin-bottom: 15px;
+    }
+    button {
+      padding: 10px 20px;
+      background-color: #4285f4;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #357ae8;
+    }
+  </style>
+</head>
+<body>
+
+<div class="container" id="formContainer" style="display: none;">
+  <h2>Copy Binyan Shalem Form</h2>
+  <textarea id="formText" readonly>
+Husband (First and Last):
+
+Wife (First and Maiden):
+
+Husband Cell:
+
+Husband Email (optional):
+
+Wife Cell:
+
+Wife Email (optional):
+
+Husband Age:
+
+Wife Age:
+
+Address:
+
+How many years have you been married?:
+
+Issue Presenting:
+
+Family Rabbi (optional):
+
+Anyone else involved (optional):
+
+Husband and Wife's Parents' Names:
+
+How many kids?:
+  </textarea>
+  <button onclick="copyText()">Copy Form Text</button>
+</div>
+
+<script>
+  const PASSWORD = "binyan123"; // Set your password here
+
+  window.onload = function () {
+    const userPassword = prompt("Enter password to access this page:");
+    if (userPassword === PASSWORD) {
+      document.getElementById("formContainer").style.display = "block";
+    } else {
+      alert("Incorrect password. Access denied.");
+      document.body.innerHTML = "<h2 style='text-align:center; margin-top: 20%; font-family: Arial;'>Access Denied</h2>";
+    }
+  };
+
+  function copyText() {
+    const textArea = document.getElementById("formText");
+    textArea.select();
+    textArea.setSelectionRange(0, 99999);
+    document.execCommand("copy");
+    alert("Form text copied to clipboard!");
+  }
+</script>
+
+</body>
+</html>
